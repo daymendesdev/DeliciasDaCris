@@ -1,67 +1,96 @@
-body{
-    margin: 0px;
-    width: 1550px;
-    font-size: 16px;
-    
+@import url("https://fonts.googleapis.com/css2? family= Heebo:wght@100;200;300;400;500;600;700;800;900 & family= Poppins:ital, peso@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900 & display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-header{
-    background-color: white;
-    height: 58px;
-    
+body {
+  overflow-x: hidden;
 }
 
-header img{
-width: 70px;
-height: 70px;
-margin-top: 10px;
-margin-left: 230px;
-position: absolute;
+header {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.08);
+}
+header img {
+  height: 80px;
+}
+header nav ul {
+  list-style: none;
+}
+header nav ul li {
+  display: inline-block;
+  margin-right: 25px;
+}
+header nav ul li a {
+  color: #333333;
+  text-decoration: none;
+  transition: 300ms ease;
+}
+header nav ul li a:hover {
+  color: #c0051c;
 }
 
-header nav{
-    display: inline-block;
-    margin-left: 770px;
-    margin-top: 15px;
-    position: relative;
+a.pedidos {
+  background-color: #FB6376;
+  height: 40px;
+  width: 165px;
+  padding: 10px;
+  color: #FFFFFF;
+  border-radius: 4px;
+}
+a.pedidos:hover {
+  background-color: #fa314a;
+  color: #FFF;
 }
 
-ul{
-    list-style: none;
+#mae {
+  background: url("/imagens/fundo.png") center center/cover;
+  height: 90vh;
+  width: 100vw;
 }
-
-nav li{
-    display: inline-block;
-    padding-left: 30px;
-    color: black;
+#mae #filha {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(90deg, #FB6376 0%, rgba(251, 99, 118, 0) 100%);
+  display: flex;
+  align-items: center;
 }
-
-ul li a{
-    text-decoration: none;
+#mae #filha div {
+  padding-left: 10%;
 }
-
-a.pedidos{
-    background-color: #FB6376;
-    height: 40px;
-    width: 165px;
-    padding: 10px;
-    color: #FFFFFF;
-    border-radius: 4px;
-    }
-
-    ul li a:hover{
-        color: #FB6376;
-    }
-
-    a.pedidos:hover{
-        background-color: #e7939d;
-        color: #FFFFFF;
-    }
-
-    #mae{
-        margin-top: 18px;
-        background-image: url('/imagens/fundo.png');
-        background-size: cover;
-        width: 1550px;
-        height: 832px;
-    }
+#mae #filha div h1 {
+  color: #FFF;
+  font-size: 70px;
+  font-weight: 700;
+}
+#mae #filha div p {
+  font-size: 30px;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+#mae #filha div button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #FB6376;
+  color: white;
+  cursor: pointer;
+  transition: 300ms ease;
+}
+#mae #filha div button:hover {
+  background-color: #fa314a;
+}
+#mae #filha div button i {
+  margin-right: 7px;
+}/*# sourceMappingURL=index.css.map */
