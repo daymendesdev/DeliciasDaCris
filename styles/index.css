@@ -1,0 +1,67 @@
+body{
+    margin: 0px;
+    width: 1550px;
+    font-size: 16px;
+    
+}
+
+header{
+    background-color: white;
+    height: 58px;
+    
+}
+
+header img{
+width: 70px;
+height: 70px;
+margin-top: 10px;
+margin-left: 230px;
+position: absolute;
+}
+
+header nav{
+    display: inline-block;
+    margin-left: 770px;
+    margin-top: 15px;
+    position: relative;
+}
+
+ul{
+    list-style: none;
+}
+
+nav li{
+    display: inline-block;
+    padding-left: 30px;
+    color: black;
+}
+
+ul li a{
+    text-decoration: none;
+}
+
+a.pedidos{
+    background-color: #FB6376;
+    height: 40px;
+    width: 165px;
+    padding: 10px;
+    color: #FFFFFF;
+    border-radius: 4px;
+    }
+
+    ul li a:hover{
+        color: #FB6376;
+    }
+
+    a.pedidos:hover{
+        background-color: #e7939d;
+        color: #FFFFFF;
+    }
+
+    #mae{
+        margin-top: 18px;
+        background-image: url('/imagens/fundo.png');
+        background-size: cover;
+        width: 1550px;
+        height: 832px;
+    }
