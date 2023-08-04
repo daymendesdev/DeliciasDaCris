@@ -59,56 +59,60 @@ a.pedidos {
     color: #FFFFFF;
     border-radius: 4px;
 
-    &:hover{
+    &:hover {
         background-color: darken($corPrincipal, 10%);
         color: #FFF;
     }
 }
 
+main {
+    #mae {
+        background: url('/imagens/fundo.png') center center/cover;
+        height: 90vh;
+        width: 100vw;
 
-#mae {
-    background: url('/imagens/fundo.png') center center/cover;
-    height: 90vh;
-    width: 100vw;
+        #filha {
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(90deg, $corPrincipal 0%, rgba(251, 99, 118, 0.00) 100%);
+            display: flex;
+            align-items: center;
 
-    #filha {
-        height: 100%;
-        width: 100%;
-        background: linear-gradient(90deg, $corPrincipal 0%, rgba(251, 99, 118, 0.00) 100%);
-        display: flex;
-        align-items: center;
+            div {
+                padding-left: 10%;
 
-        div {
-            padding-left: 10%;
-            h1 {
-                color: #FFF;
-                font-size: 70px;
-                font-weight: 700;
-            }
-            p{
-                font-size: 30px;
-                color: #fff;
-                font-weight: bold;
-                margin-bottom: 10px;
-            }
-
-            button {
-                padding: 10px;
-                border: none;
-                border-radius: 4px;
-                background-color: $corPrincipal;
-                color: white;
-                cursor: pointer;
-                transition: 300ms ease;
-                &:hover{
-                    background-color: darken($corPrincipal, 10%);
+                h1 {
+                    color: #FFF;
+                    font-size: 70px;
+                    font-weight: 700;
                 }
 
-                i{
-                    margin-right: 7px;
+                p {
+                    font-size: 30px;
+                    color: #fff;
+                    font-weight: bold;
+                    margin-bottom: 10px;
+                }
+
+                button {
+                    padding: 10px;
+                    border: none;
+                    border-radius: 4px;
+                    background-color: $corPrincipal;
+                    color: white;
+                    cursor: pointer;
+                    transition: 300ms ease;
+
+                    &:hover {
+                        background-color: darken($corPrincipal, 10%);
+                    }
+
+                    i {
+                        margin-right: 7px;
+                    }
                 }
             }
+
         }
-
     }
 }
