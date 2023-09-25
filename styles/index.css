@@ -53,33 +53,33 @@ a.pedidos:hover {
   color: #FFF;
 }
 
-#mae {
+main #mae {
   background: url("/imagens/fundo.png") center center/cover;
   height: 90vh;
   width: 100vw;
 }
-#mae #filha {
+main #mae #filha {
   height: 100%;
   width: 100%;
   background: linear-gradient(90deg, #FB6376 0%, rgba(251, 99, 118, 0) 100%);
   display: flex;
   align-items: center;
 }
-#mae #filha div {
+main #mae #filha div {
   padding-left: 10%;
 }
-#mae #filha div h1 {
+main #mae #filha div h1 {
   color: #FFF;
   font-size: 70px;
   font-weight: 700;
 }
-#mae #filha div p {
+main #mae #filha div p {
   font-size: 30px;
   color: #fff;
   font-weight: bold;
   margin-bottom: 10px;
 }
-#mae #filha div button {
+main #mae #filha div button {
   padding: 10px;
   border: none;
   border-radius: 4px;
@@ -88,9 +88,132 @@ a.pedidos:hover {
   cursor: pointer;
   transition: 300ms ease;
 }
-#mae #filha div button:hover {
+main #mae #filha div button:hover {
   background-color: #fa314a;
 }
-#mae #filha div button i {
-  margin-right: 7px;
+main #mae #filha div button i {
+  margin-right: 2px;
+}
+
+.header2 {
+  background-color: white;
+  margin-top: 5%;
+  padding: 15px;
+  overflow: auto;
+}
+.header2 h3 {
+  margin-left: 40%;
+}
+.header2 p {
+  width: 108px;
+  height: 2px;
+  flex-shrink: 0;
+  stroke-width: 12px;
+  background-color: #FB6376;
+  margin-left: 40%;
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
+.card {
+  margin-left: 2em;
+  display: inline-block;
+}
+
+.card img {
+  width: 21vw;
+  height: 350px;
+  display: block;
+}
+
+.card1 .card2 .card3 .card4 {
+  margin-right: 3em;
+  display: inline-block;
+}
+
+.card p {
+  background-color: #FB6376;
+  opacity: 90%;
+  width: 21vw;
+  color: white;
+  padding: 1em;
+  margin: 0;
+  display: flex;
+}
+
+.header3 {
+  background-color: white;
+  margin-top: 5em;
+  overflow: auto;
+}
+.header3 h3 {
+  margin-left: 40%;
+}
+.header3 p {
+  width: 108px;
+  height: 2px;
+  flex-shrink: 0;
+  stroke-width: 12px;
+  background-color: #FB6376;
+  margin-left: 40%;
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
+.cards2 {
+  margin-left: 47px;
+  display: inline-block;
+  margin-right: -45px;
+}
+
+.cards2 img {
+  width: 578px;
+  height: 377px;
+  border-radius: 8px;
+}
+
+.header4 {
+  background-color: white;
+  margin-top: 40px;
+  padding: 15px;
+  overflow: auto;
+}
+.header4 h3 {
+  margin-left: 40%;
+}
+.header4 p {
+  width: 70px;
+  height: 2px;
+  flex-shrink: 0;
+  stroke-width: 12px;
+  background-color: #FB6376;
+  margin-left: 40%;
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
+.SobreNos {
+  width: 100vw;
+  height: 80vh;
+  margin-top: 2%;
+}
+.SobreNos .imagem-sobreNos {
+  float: left;
+  width: 50vw;
+  border: solid 1px red;
+}
+.SobreNos .imagem-sobreNos .imagemaqui {
+  width: 20vw;
+  height: 60vh;
+  margin-left: 40%;
+}
+.SobreNos .imagem-sobreNos .imagemaqui img {
+  width: 100%;
+  height: 100%;
+}
+.SobreNos .inforSobreNos {
+  float: right;
+  width: 50vw;
+  text-align: center;
+  border: solid 1px blue;
 }/*# sourceMappingURL=index.css.map */

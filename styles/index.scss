@@ -108,11 +108,158 @@ main {
                     }
 
                     i {
-                        margin-right: 7px;
+                        margin-right: 2px;
                     }
-                }
-            }
 
+                }
+
+            }
         }
+
     }
 }
+
+.header2 {
+    background-color: white;
+    margin-top: 5%;
+    padding: 15px;
+    overflow: auto;
+
+    h3 {
+        margin-left: 40%;
+    }
+
+    p {
+        width: 108px;
+        height: 2px;
+        flex-shrink: 0;
+        stroke-width: 12px;
+        background-color: #FB6376;
+        margin-left: 40%;
+        margin-top: 5px;
+        margin-bottom: 30px;
+    }
+
+}
+
+.card {
+    margin-left: 2em;
+    display: inline-block;
+}
+
+.card img {
+    width: 21vw;
+    height: 350px;
+    display: block;
+}
+
+.card1
+.card2 .card3 .card4 {
+    margin-right: 3em;
+    display: inline-block;
+}
+
+.card p {
+    background-color: $corPrincipal;
+    opacity: 90%;
+    width: 21vw;
+    color: white;
+    padding: 1em;
+    margin: 0;
+    display: flex;
+
+}
+
+.header3 {
+    background-color: white;
+    margin-top: 5em;
+    
+    overflow: auto;
+    
+
+    h3 {
+        margin-left: 40%;
+    }
+    p {
+        width: 108px;
+        height: 2px;
+        flex-shrink: 0;
+        stroke-width: 12px;
+        background-color: #FB6376;
+        margin-left: 40%;
+        margin-top: 5px;
+        margin-bottom: 30px;
+    }
+}
+
+.cards2 {
+    margin-left: 47px;
+    display: inline-block;
+    margin-right: -45px;
+}
+
+
+.cards2 img {
+    width: 578px;
+    height: 377px;
+    border-radius: 8px;
+    
+}
+
+.header4 {
+    background-color: white;
+    margin-top: 40px;
+    padding: 15px;
+    overflow: auto;
+    
+
+    h3 {
+        margin-left: 40%;
+    }
+    p {
+        width: 70px;
+        height: 2px;
+        flex-shrink: 0;
+        stroke-width: 12px;
+        background-color: #FB6376;
+        margin-left: 40%;
+        margin-top: 5px;
+        margin-bottom: 30px;
+    }
+}
+
+.SobreNos{
+    width: 100vw;
+    height: 80vh;
+    margin-top: 2%;
+
+    .imagem-sobreNos{
+        float: left;
+        width: 50vw;
+        border: solid 1px red;
+
+    .imagemaqui{
+        width: 20vw;
+        height: 60vh;
+        margin-left: 40%;
+       
+
+        img{
+            width: 100%;
+            height: 100%;
+           
+        }
+    }
+    }
+
+    .inforSobreNos{
+    float: right;
+    width: 50vw;
+    text-align: center;
+    border: solid 1px blue;
+    
+
+}
+
+}
+
