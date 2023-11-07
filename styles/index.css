@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2? family= Heebo:wght@100;200;300;400;500;600;700;800;900 & family= Poppins:ital, peso@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900 & display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
 * {
   padding: 0;
   margin: 0;
@@ -21,21 +22,26 @@ header {
   top: 0;
   box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.08);
 }
+
 header img {
   height: 80px;
 }
+
 header nav ul {
   list-style: none;
 }
+
 header nav ul li {
   display: inline-block;
   margin-right: 25px;
 }
+
 header nav ul li a {
   color: #333333;
   text-decoration: none;
   transition: 300ms ease;
 }
+
 header nav ul li a:hover {
   color: #c0051c;
 }
@@ -48,6 +54,7 @@ a.pedidos {
   color: #FFFFFF;
   border-radius: 4px;
 }
+
 a.pedidos:hover {
   background-color: #fa314a;
   color: #FFF;
@@ -58,6 +65,7 @@ main #mae {
   height: 90vh;
   width: 100vw;
 }
+
 main #mae #filha {
   height: 100%;
   width: 100%;
@@ -65,20 +73,24 @@ main #mae #filha {
   display: flex;
   align-items: center;
 }
+
 main #mae #filha div {
   padding-left: 10%;
 }
+
 main #mae #filha div h1 {
   color: #FFF;
   font-size: 70px;
   font-weight: 700;
 }
+
 main #mae #filha div p {
   font-size: 30px;
   color: #fff;
   font-weight: bold;
   margin-bottom: 10px;
 }
+
 main #mae #filha div button {
   padding: 10px;
   border: none;
@@ -88,9 +100,11 @@ main #mae #filha div button {
   cursor: pointer;
   transition: 300ms ease;
 }
+
 main #mae #filha div button:hover {
   background-color: #fa314a;
 }
+
 main #mae #filha div button i {
   margin-right: 2px;
 }
@@ -101,9 +115,11 @@ main #mae #filha div button i {
   padding: 15px;
   overflow: auto;
 }
+
 .header2 h3 {
   margin-left: 40%;
 }
+
 .header2 p {
   width: 108px;
   height: 2px;
@@ -146,9 +162,11 @@ main #mae #filha div button i {
   margin-top: 5em;
   overflow: auto;
 }
+
 .header3 h3 {
   margin-left: 40%;
 }
+
 .header3 p {
   width: 108px;
   height: 2px;
@@ -178,9 +196,11 @@ main #mae #filha div button i {
   padding: 15px;
   overflow: auto;
 }
+
 .header4 h3 {
   margin-left: 40%;
 }
+
 .header4 p {
   width: 4vw;
   height: 2px;
@@ -193,17 +213,27 @@ main #mae #filha div button i {
 }
 
 .SobreNos {
-  
 
-  .div-video video{
-    width: 20vw;
-    height: 60vh;
-    border-radius: 5px ;
+  height: 80vh;
+
+    .div-image img {
+      width: 26vw;
+      height: 75vh;
+      border-radius: 5px;
+    }
   }
 
-  .InforSobreNos{
-    cursor: default;
+  .div-image{
+    margin-left: 3em;
+    float: left;
   }
 
+  .InforSobreNos h1 p{
+      margin-left: 5%;
+      cursor: default;
+      float: right;
+  }
+
+  .InforSobreNos h1{
+    font-size: 2.5em;
 }
-
