@@ -111,13 +111,40 @@ main #mae #filha div button i {
 
 /*COD "O que servimos?*/
 
+.segunda{
+  height: 80vh;
+  width: 100vw;
+  background-color: #fa314a;
+}
+.header2{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5em;
+  font-size: 1em;
+}
 
+.barra{
+  background-color: #FB6376;
+  width: 5em;
+  height: 0.2em;
+  margin-right: 3.5em;
+  margin-bottom: 4em;
+  margin-top: 1em;
+}
 
+.container-image{
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+}
 
-
-
-
-
+.container-image img{
+  width: 100%;
+  max-width: 20em;
+}
 
 
 
