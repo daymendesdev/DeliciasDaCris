@@ -162,13 +162,10 @@ main #mae #filha div button i {
   margin-left: 1em;
 }
 .card1 p{
+  color: #FFF;
   background-color: #fa314a;
   padding: 0.6em;
   margin-top: -0.3em;
-}
-
-.card1:hover{
-  color: #FFF;
 }
 
 .card1 img:hover{
@@ -270,17 +267,16 @@ footer{
   margin-top: 4em;
   width: 100vw;
   height: 45vh;
-  color: white;
-  background-color: #333333;
+ /* color: white;
+  background-color: #333333;*/
 }
 
 .rodape{
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  padding-top: 5em;
-  
+  text-align: center; 
+  padding-top: 2em;
 }
 
 .endereco{
@@ -299,6 +295,11 @@ footer{
   font-size: 1.5em;
   padding-left: 0.8em;
 }
+.Nutricionista img{
+  width: 100%;
+  max-width: 25vw;
+  max-height: 25vh;
+}
 
 footer h4{
   text-decoration:none;
@@ -308,6 +309,6 @@ footer h4{
 
 .direitos-autorais{
   display: flex;
-  padding-top: 2em;
+  padding-top: 1em;
   justify-content: center;
 }
