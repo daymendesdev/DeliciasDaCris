@@ -112,9 +112,9 @@ main #mae #filha div button i {
 /*COD "O que servimos?*/
 
 .segunda{
-  height: 80vh;
+  height: 70vh;
   width: 100vw;
-  background-color: #fa314a;
+ 
 }
 .header2{
   text-align: center;
@@ -139,61 +139,175 @@ main #mae #filha div button i {
   display: flex;
   flex-direction: row;
   width: 100vw;
+  align-items: center;
+  justify-content: center;
 }
 
 .container-image img{
   width: 100%;
-  max-width: 20em;
+  max-width: 36vw;
+  max-height: 39vh;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-.header3 {
-  background-color: white;
-  margin-top: 5em;
-  overflow: auto;
-}
-
-.header3 h3 {
-  margin-left: 40%;
-}
-
-.header3 p {
-  width: 108px;
-  height: 2px;
-  flex-shrink: 0;
-  stroke-width: 12px;
+.barra-2{
   background-color: #FB6376;
-  margin-left: 40%;
-  margin-top: 5px;
-  margin-bottom: 30px;
+  width: 3em;
+  height: 0.2em;
+  margin-right: 2.3em;
+  margin-bottom: 4em;
+  margin-top: 1em;
 }
 
-.cards2 {
+.card1{
+  margin-left: 1em;
+}
+.card1 p{
+  background-color: #fa314a;
+  padding: 0.6em;
+  margin-top: -0.3em;
+}
+
+.card1:hover{
+  color: #FFF;
+}
+
+.card1 img:hover{
+  max-width: 37vw;
+  max-height: 40vh;
+}
+
+
+/* Imagens da cafeteria*/
+
+.terceira{
+  width: 100vw;
+  height: 70vh;
+}
+
+.container-image2{
   display: flex;
-  margin-right: 0.5em;
-  margin-left: 1.6em;
+  flex-direction: row;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
 }
 
-.cards2 img {
-  width: 29vw;
-  height: 60vh;
-  border-radius: 8px;
+.container-image2 img{
+  width: 100%;
+  max-width: 36vw;
+  max-height: 39vh;
+  border-radius: 0.4em;
 }
-*/
+
+
+
+.quarta{
+  width: 100vw;
+  height: 80vh;
+}
+
+.SobreNos{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+}
+
+.SobreNosImage img{
+width: 100%;
+max-width: 40vw;
+max-height: 60vh;
+border-radius: 0.5em;
+}
+
+.InforSobreNos{
+  padding-left: 2em;
+}
+
+.InforSobreNos h1{
+  color: #d43144;
+  font-size: 2em;
+}
+.InforSobreNos p{
+  text-align: justify;
+  width: 30vw;
+}
+
+.quinta{
+  width: 100vw;
+  height: 80vh;
+}
+
+.barra-3{
+  background-color: #FB6376;
+  width: 3em;
+  height: 0.2em;
+  margin-right: 3.5em;
+  margin-bottom: 4em;
+  margin-top: 1em;
+}
+
+.container-mapa{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-border{
+  width: 79vw;
+  border: 1px solid rgb(114, 110, 110);
+  border-radius: 0.2em;
+
+}
+
+.container-mapa iframe{
+  width: 100%;
+  width: 78vw;
+  height: 60vh;
+}
+
+footer{
+  margin-top: 4em;
+  width: 100vw;
+  height: 45vh;
+  color: white;
+  background-color: #333333;
+}
+
+.rodape{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 5em;
+  
+}
+
+.endereco{
+  width: 30vw;
+}
+
+.funcionamento{
+  width: 30vw;
+}
+
+.sociais{
+  width: 20vw;
+}
+
+.sociais a i{
+  font-size: 1.5em;
+  padding-left: 0.8em;
+}
+
+footer h4{
+  text-decoration:none;
+  color: #ff2942;
+  margin-bottom: 1em;
+}
+
+.direitos-autorais{
+  display: flex;
+  padding-top: 2em;
+  justify-content: center;
+}
