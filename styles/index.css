@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2? family= Heebo:wght@100;200;300;400;500;600;700;800;900 & family= Poppins:ital, peso@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900 & display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 
 * {
@@ -11,19 +11,17 @@
 body {
   overflow-x: hidden;
 }
-/* COD Primeira seção*/
 
-header{
-  background-color: rgb(255, 255, 255);
+header {
+  background-color: #212121;
   box-shadow: 0 0.5em 0.5em #464646;
-  /*position: fixed;*/
   width: 100vw;
 }
 
-.logo{
-  display: flex;
-  align-items: center;
-  margin-left: 4em;
+.logo img {
+  width: 100%;
+  margin: 0em 3em;
+  max-width: 4em;
 }
 
 header img {
@@ -31,48 +29,49 @@ header img {
   max-width: 5em;
 }
 
-.nav-bar{
+.nav-bar {
   display: flex;
   justify-content: space-between;
-   margin-right: 4em;
-  
+  margin-right: 4em;
 }
 
-.nav-list{
+.nav-list {
   display: flex;
   align-items: center;
 }
 
-.nav-list ul{
+.nav-list ul {
   display: flex;
   justify-content: center;
   list-style: none;
 }
 
-.nav-item{
-  margin: 0 0.5em
+.nav-item {
+  margin: 0 0.5em;
 }
 
-.nav-link{
-  font-size: 1.15rem;
-  color: #333333;
+.nav-link {
+  font-size: 1rem;
+  color: white;
   text-decoration: none;
+  font-family: "Heebo", sans-serif;
   transition: 300ms ease;
 }
 
-.nav-link:hover{
+.nav-link:hover {
   color: #fa314a;
+  font-weight: bold;
 }
 
 a.pedidos {
   background-color: #FB6376;
   height: 40px;
-  width: 165px;
   padding: 10px;
+  margin-left: 1em;
   color: #FFFFFF;
   border-radius: 4px;
   text-decoration: none;
-  font-size: 1.15rem;
+  font-size: 1rem;
 }
 
 a.pedidos:hover {
@@ -80,82 +79,71 @@ a.pedidos:hover {
   color: #FFF;
 }
 
-.mobile-menu-icon{
+.mobile-menu-icon {
   display: none;
 }
 
-.mobile-menu{
+
+.mobile-menu {
   display: none;
 }
 
-@media screen and (max-width: 948px) { 
-
-  .header{
+@media screen and (max-width: 948px) {
+  .header {
     padding: 0;
     margin: 0;
   }
-  .logo{
+  .logo {
     display: flex;
     align-items: center;
     margin: 0;
   }
-  .nav-bar{
+  .nav-bar {
     margin: 0;
     padding: 1.5rem 3rem;
     display: flex;
     justify-content: space-between;
-
   }
 
-  .nav-item{
+  .nav-item {
     display: none;
   }
 
-  .mobile-menu-icon{
+  .mobile-menu-icon {
     display: flex;
-    
   }
-  
-  .mobile-menu-icon button{
+
+  .mobile-menu-icon button {
     background-color: transparent;
     border: none;
     cursor: pointer;
   }
 
-  .mobile-menu ul{
+  .mobile-menu ul {
     display: flex;
     flex-direction: column;
     text-align: center;
     padding-bottom: 2rem;
     padding-top: 0;
-    m
+    m;
   }
 
-  .mobile-menu .nav-item{
+  .mobile-menu .nav-item {
     display: block;
     padding-top: 1.2rem;
   }
-/*
-.mobile-menu{
-  display: block;
-  padding: 1rem 2rem;
-}*/
 
-.mobile-menu button{
-  width: 100%;
+  .mobile-menu button {
+    width: 100%;
+  }
+
+  .open {
+    display: block;
+  }
 }
-
-.open{
-  display: block;
-}
-
-}
-
-
-
 
 main #mae {
-  background: url("/imagens/fundo.png") center center/cover;
+  background: url("../imagens/fundo.png") center center/cover;
   height: 90vh;
   width: 100vw;
 }
@@ -203,14 +191,12 @@ main #mae #filha div button i {
   margin-right: 2px;
 }
 
-/*COD "O que servimos?*/
-
-.segunda{
+.segunda {
   height: 70vh;
   width: 100vw;
- 
 }
-.header2{
+
+.header2 {
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -220,7 +206,11 @@ main #mae #filha div button i {
   font-size: 1em;
 }
 
-.barra{
+.header2 h3 {
+  color: #FB6376;
+}
+
+.barra {
   background-color: #FB6376;
   width: 5em;
   height: 0.2em;
@@ -229,7 +219,7 @@ main #mae #filha div button i {
   margin-top: 1em;
 }
 
-.container-image{
+.container-image {
   display: flex;
   flex-direction: row;
   width: 100vw;
@@ -237,13 +227,13 @@ main #mae #filha div button i {
   justify-content: center;
 }
 
-.container-image img{
+.container-image img {
   width: 100%;
   max-width: 36vw;
   max-height: 39vh;
 }
 
-.barra-2{
+.barra-2 {
   background-color: #FB6376;
   width: 3em;
   height: 0.2em;
@@ -252,30 +242,30 @@ main #mae #filha div button i {
   margin-top: 1em;
 }
 
-.card1{
+.card1 {
   margin-left: 1em;
 }
-.card1 p{
+
+.card1 p {
   color: #FFF;
   background-color: #fa314a;
   padding: 0.6em;
   margin-top: -0.3em;
 }
 
-.card1 img:hover{
+.card1 img:hover {
   max-width: 37vw;
   max-height: 40vh;
 }
 
-
-/* Imagens da cafeteria*/
-
-.terceira{
+.terceira {
+  padding: 1px;
   width: 100vw;
   height: 70vh;
+  background-color: #f5f5f5;
 }
 
-.container-image2{
+.container-image2 {
   display: flex;
   flex-direction: row;
   width: 100vw;
@@ -283,53 +273,52 @@ main #mae #filha div button i {
   justify-content: center;
 }
 
-.container-image2 img{
+.container-image2 img {
   width: 100%;
   max-width: 36vw;
   max-height: 39vh;
   border-radius: 0.4em;
 }
 
-
-
-.quarta{
+.quarta {
   width: 100vw;
   height: 80vh;
 }
 
-.SobreNos{
+.SobreNos {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100vw;
 }
 
-.SobreNosImage img{
-width: 100%;
-max-width: 40vw;
-max-height: 60vh;
-border-radius: 0.5em;
+.SobreNosImage img {
+  width: 100%;
+  max-width: 40vw;
+  max-height: 60vh;
+  border-radius: 0.5em;
 }
 
-.InforSobreNos{
+.InforSobreNos {
   padding-left: 2em;
 }
 
-.InforSobreNos h1{
+.InforSobreNos h1 {
   color: #d43144;
   font-size: 2em;
 }
-.InforSobreNos p{
+
+.InforSobreNos p {
   text-align: justify;
   width: 30vw;
 }
 
-.quinta{
+.quinta {
   width: 100vw;
   height: 80vh;
 }
 
-.barra-3{
+.barra-3 {
   background-color: #FB6376;
   width: 3em;
   height: 0.2em;
@@ -338,77 +327,81 @@ border-radius: 0.5em;
   margin-top: 1em;
 }
 
-.container-mapa{
+.container-mapa {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.container-border{
+.container-border {
   width: 79vw;
   border: 1px solid rgb(114, 110, 110);
   border-radius: 0.2em;
-
 }
 
-.container-mapa iframe{
+.container-mapa iframe {
   width: 100%;
   width: 78vw;
   height: 60vh;
 }
 
-footer{
+footer {
   margin-top: 4em;
   width: 100vw;
   height: 45vh;
-}
-
-.rodape{
   display: flex;
-  justify-content: center;
+  color: white;
+  background-color: #212121;
+  flex-direction: column;
+}
+
+.rodape {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  text-align: center; 
-  padding-top: 2em;
+  text-align: center;
+  padding-top: 5em;
 }
 
-.endereco{
-  width: 30vw;
+.endereco,
+.funcionamento,
+.sociais {
+  width: 30%; /* Cada coluna ocupa 30% do espaço no rodapé */
 }
 
-.funcionamento{
-  width: 30vw;
+.sociais a i {
+  font-size: 1.3em;
+  color: white;
+  background-color: #fe607a;
+  text-decoration: none;
+  padding: 0.35em 0.60em;
+  border-radius: 360%;
+  margin: 0.1em;
 }
 
-.sociais{
-  width: 20vw;
-}
-
-.sociais a i{
-  font-size: 1.5em;
-  padding-left: 0.8em;
-}
-.Nutricionista img{
+.Nutricionista img {
   width: 100%;
   max-width: 25vw;
   max-height: 25vh;
 }
 
-footer h4{
-  text-decoration:none;
-  color: #ff2942;
+footer h4 {
+  text-decoration: none;
+  color: #fe607a;
   margin-bottom: 1em;
 }
 
-.direitos-autorais{
+footer p{
+    font-size: 0.9em; /* Alterado tamanho da fonte dos parágrafos */
+}
+
+.direitos-autorais {
+  color: #cfcaca;
   display: flex;
-  padding-top: 1em;
+  padding-top: 2em;
   justify-content: center;
 }
 
-@media screen and (max-width: 813px){
 
-
-
-
-
+@media screen and (max-width: 813px) {
 }
