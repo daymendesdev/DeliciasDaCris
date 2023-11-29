@@ -20,18 +20,18 @@
                 <img src="imagens/slogan.png" alt="Slogan Delícias da Cris">
             </div>
             <div class="nav-list">
-            <ul>
-                <li class="nav-item"><a href="#mae" class="nav-link">Início</a></li>
-                <li class="nav-item"><a href="#Cardapio" class="nav-link">O que servimos</a></li>
-                <li class="nav-item"><a href="#Cafeteria" class="nav-link">Nossa Cafeteria</a></li>
-                <li class="nav-item"><a href="#Sobre" class="nav-link">Sobre nós</a></li>
-                <li class="nav-item"><a href="#Loc" class="nav-link">Localização</a></li>
-                <li class="nav-item"><a href="https://www.instagram.com/deliciassdacriiss/" class="pedidos">Faça seu pedido</a></li>
-            </ul>
-        </div>
-        <div class="mobile-menu-icon">
-            <button onclick="menuShow()"><img class="icon" src="imagens/menu.svg" alt=""></button>
-        </div>
+                <ul>
+                    <li class="nav-item"><a href="#mae" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#Cardapio" class="nav-link">O que servimos</a></li>
+                    <li class="nav-item"><a href="#Cafeteria" class="nav-link">Nossa Cafeteria</a></li>
+                    <li class="nav-item"><a href="#Sobre" class="nav-link">Sobre nós</a></li>
+                    <li class="nav-item"><a href="#Loc" class="nav-link">Localização</a></li>
+                    <li class="nav-item"><a href="https://www.instagram.com/deliciassdacriiss/" class="pedidos">Faça seu pedido</a></li>
+                </ul>
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="toggleMenu()"><img class="icon" src="imagens/menu.svg" alt=""></button>
+            </div>
         </nav>
         <div class="mobile-menu">
             <ul>
@@ -42,33 +42,30 @@
                 <li class="nav-item"><a href="#Loc" class="nav-link">Localização</a></li>
                 <li class="nav-item"><a href="https://www.instagram.com/deliciassdacriiss/" class="pedidos">Faça seu pedido</a></li>
             </ul>
-            </div>
         </div>
     </header>
 
     <!--Início da primeira imagem/seção-->
     <main>
-        <div id="mae">
+        <!-- Section: Início -->
+        <section id="mae">
             <div id="filha">
                 <div>
                     <h1>Delícias da Cris</h1>
                     <p>Cafeteria e Doceria</p>
-                    <button onclick="navegar()"><i class="bi bi-instagram"></i>Faça seu pedido</button>
+                    <button onclick="navigateToInstagram()"><i class="bi bi-instagram"></i>Faça seu pedido</button>
                 </div>
             </div>
-
-        </div>
+        </section>
         <!--Fim da primeira imagem/seção-->
 
 
-        <!--O que servimos? inicio-->
+        <!-- Section: O que servimos? -->
         <section class="segunda">
-
             <div class="header2">
                 <h3 id="Cardapio">O que servimos</h3>
                 <div class="barra"></div>
             </div>
-
             <div class="container-image">
                 <div class="card1">
                     <img src="imagens/bolo-2.jpg" alt="" />
@@ -92,7 +89,7 @@
         </section>
         <!--O que servimos? fim-->
 
-        <!--Imagens da cafeteria-->
+        <!-- Section: Imagens da cafeteria -->
         <section class="terceira">
 
             <div class="header2">
@@ -116,6 +113,7 @@
             </div>
         </section>
 
+        <!-- Section: Sobre nós -->
         <section class="quarta">
 
             <div class="header2">
@@ -182,10 +180,9 @@
     </footer>
   
     <script src="styles/nav.js"></script>
-
     <script>
-        function navegar() {
-            open('https://www.instagram.com/deliciassdacriiss/')
+        function navigateToInstagram() {
+            window.open('https://www.instagram.com/deliciassdacriiss/');
         }
     </script>
 </body>
