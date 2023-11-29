@@ -404,6 +404,7 @@ footer p{
   display: flex;
   padding-top: 2em;
   justify-content: center;
+  background-color: #212121;
 }
 
 
@@ -412,6 +413,52 @@ footer p{
 
 
 @media screen and (max-width: 948px) {
+  
+
+  .rodape {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+      padding: 2em;
+  }
+
+  .endereco,
+  .funcionamento,
+  .sociais {
+      width: 100%; /* Each column occupies 100% on small screens */
+      margin-bottom: 2em;
+  }
+
+  .sociais a i {
+      font-size: 1.3em;
+      color: white;
+      background-color: #fe607a;
+      text-decoration: none;
+      padding: 0.35em 0.60em;
+      border-radius: 360%;
+      margin: 0.1em;
+  }
+
+  footer h4 {
+      text-decoration: none;
+      color: #fe607a;
+      margin-bottom: 1em;
+  }
+
+  footer p {
+      font-size: 0.9em;
+      margin-bottom: 1em;
+  }
+
+  .direitos-autorais {
+    
+      color: #cfcaca;
+      display: flex;
+      justify-content: center;
+      padding-bottom: 2em;
+  }
   .nav-list {
       display: none;
   }
