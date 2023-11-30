@@ -13,9 +13,10 @@ body {
 }
 
 header {
-  background-color: #212121;
-  box-shadow: 0 0.5em 0.5em #464646;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0.1em 0.9em #464646;
   width: 100vw;
+  position: fixed;
 }
 
 .logo img {
@@ -52,7 +53,7 @@ header img {
 
 .nav-link {
   font-size: 1rem;
-  color: white;
+  color: rgb(0, 0, 0);
   text-decoration: none;
   font-family: "Heebo", sans-serif;
   transition: 300ms ease;
@@ -64,7 +65,7 @@ header img {
 }
 
 a.pedidos {
-  background-color: #FB6376;
+  background-color: #fa314a;
   height: 40px;
   padding: 10px;
   margin-left: 1em;
@@ -90,60 +91,6 @@ a.pedidos:hover {
 
 .mobile-menu {
   display: none;
-}
-
-@media screen and (max-width: 948px) {
-  .header {
-    padding: 0;
-    margin: 0;
-  }
-  .logo {
-    display: flex;
-    align-items: center;
-    margin: 0;
-  }
-  .nav-bar {
-    margin: 0;
-    padding: 1.5rem 3rem;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .nav-item {
-    display: none;
-  }
-
-  .mobile-menu-icon {
-    display: flex;
-  }
-
-  .mobile-menu-icon button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-  }
-
-  .mobile-menu ul {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding-bottom: 2rem;
-    padding-top: 0;
-    m;
-  }
-
-  .mobile-menu .nav-item {
-    display: block;
-    padding-top: 1.2rem;
-  }
-
-  .mobile-menu button {
-    width: 100%;
-  }
-
-  .open {
-    display: block;
-  }
 }
 
 main #mae {
@@ -352,16 +299,15 @@ main #mae #filha div button i {
 footer {
   margin-top: 4em;
   width: 100vw;
-  height: 45vh;
+  height: auto;
   display: flex;
-  color: white;
-  background-color: #212121;
+  background-color: #dbc6c9;
   flex-direction: column;
 }
 
 .rodape {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   text-align: center;
   padding-top: 5em;
@@ -370,7 +316,7 @@ footer {
 .endereco,
 .funcionamento,
 .sociais {
-  width: 30%; /* Cada coluna ocupa 30% do espaço no rodapé */
+  width: 25%; /* Cada coluna ocupa 30% do espaço no rodapé */
 }
 
 .sociais a i {
@@ -400,20 +346,95 @@ footer p{
 }
 
 .direitos-autorais {
-  color: #cfcaca;
+  font-weight: 500 ;
   display: flex;
-  padding-top: 2em;
   justify-content: center;
-  background-color: #212121;
-}
-
-
-@media screen and (max-width: 813px) {
+  padding-bottom: 6em;
 }
 
 
 @media screen and (max-width: 948px) {
+
+  .header {
+    padding: 0;
+    margin: 0;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+  .nav-bar {
+    margin: 0;
+    padding: 1.5rem 3rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav-item {
+    display: none;
+  }
+
+  .mobile-menu-icon {
+    display: flex;
+  }
+
+  .mobile-menu-icon button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 2rem;
+    padding-top: 0;
+  }
+
+  .mobile-menu .nav-item {
+    display: block;
+    padding-top: 1.2rem;
+  }
+
+  .mobile-menu button {
+    width: 100%;
+  }
+
+  .open {
+    display: block;
+  }
   
+  .InforSobreNos p {
+    text-align: justify;
+    width: 40vw;
+  }
+
+  /*cards*/
+  .container-image {
+    display:grid;
+    flex-direction: row;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .container-image img {
+    width: 100%;
+    max-width: 36vw;
+    max-height: 39vh;
+  }
+
+  .card1 p {
+    color: #FFF;
+    background-color: #fa314a;
+    margin: 0;
+    padding: 0;
+    width: auto;
+   
+  }
+  /*fim cards*/
 
   .rodape {
       display: flex;
@@ -426,9 +447,8 @@ footer p{
 
   .endereco,
   .funcionamento,
-  .sociais {
+  .sociais, .Nutricionista {
       width: 100%; /* Each column occupies 100% on small screens */
-      margin-bottom: 2em;
   }
 
   .sociais a i {
@@ -453,12 +473,10 @@ footer p{
   }
 
   .direitos-autorais {
-    
-      color: #cfcaca;
+      color: #030303;
       display: flex;
       justify-content: center;
-      padding-bottom: 2em;
-  }
+    }
   .nav-list {
       display: none;
   }
@@ -467,7 +485,7 @@ footer p{
       display: flex;
       flex-direction: column;
       align-items: center;
-      background-color: #212121;
+      background-color: #fffefe;
       position: absolute;
       top: 90px;
       right: 0;
