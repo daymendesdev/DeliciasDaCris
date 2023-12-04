@@ -17,6 +17,8 @@ header {
   box-shadow: 0 0.1em 0.9em #464646;
   width: 100vw;
   position: fixed;
+  z-index: 99999999;
+  backdrop-filter: blur(10px);
 }
 
 .logo img {
@@ -143,7 +145,6 @@ main #mae #filha div button i {
 }
 
 .segunda {
-  height: 70vh;
   width: 100vw;
 }
 
@@ -172,7 +173,6 @@ main #mae #filha div button i {
 
 .container-image {
   display: flex;
-  flex-direction: row;
   width: 100vw;
   align-items: center;
   justify-content: center;
@@ -195,6 +195,13 @@ main #mae #filha div button i {
 
 .card1 {
   margin-left: 1em;
+  width: 13em;
+  overflow: hidden !important;
+  transition: 300ms ease;
+}
+
+.card1:hover{
+  transform: scale(1.1);
 }
 
 .card1 p {
@@ -204,31 +211,35 @@ main #mae #filha div button i {
   margin-top: -0.3em;
 }
 
-.card1 img:hover {
-  max-width: 37vw;
-  max-height: 40vh;
-}
-
 .terceira {
   padding: 1px;
   width: 100vw;
-  height: 70vh;
   background-color: #f5f5f5;
 }
 
 .container-image2 {
   display: flex;
-  flex-direction: row;
   width: 100vw;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .container-image2 img {
+  object-fit: cover;
+  background-position: center center;
+  background-size: cover;
   width: 100%;
-  max-width: 36vw;
-  max-height: 39vh;
-  border-radius: 0.4em;
+  height: 100%;
+}
+
+.card2{
+  margin-left: 1em;
+  width: 300px;
+  height: 350px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 35px;
 }
 
 .quarta {
@@ -276,6 +287,16 @@ main #mae #filha div button i {
   margin-right: 3.5em;
   margin-bottom: 4em;
   margin-top: 1em;
+}
+
+.header-loc {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5em;
+  font-size: 1em;
 }
 
 .container-mapa {
@@ -405,36 +426,33 @@ footer p{
   .open {
     display: block;
   }
+
+  .SobreNos{
+    flex-direction: column;
+  }
   
   .InforSobreNos p {
     text-align: justify;
     width: 40vw;
   }
 
-  /*cards*/
-  .container-image {
-    display:grid;
-    flex-direction: row;
-    width: 100vw;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .container-image img {
-    width: 100%;
-    max-width: 36vw;
-    max-height: 39vh;
+  .container-image{
+    flex-direction: column;
+    flex-wrap: nowrap;
   }
 
-  .card1 p {
-    color: #FFF;
-    background-color: #fa314a;
-    margin: 0;
-    padding: 0;
-    width: auto;
-   
+  .container-image img{
+   max-width: 40em;
+   max-height: 25em;
   }
-  /*fim cards*/
+
+  .header-loc{
+    margin-top: 15em;
+  }
+
+  .card1{
+    margin-bottom: 35px;
+  }
 
   .rodape {
       display: flex;
