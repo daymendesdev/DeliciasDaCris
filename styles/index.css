@@ -23,8 +23,11 @@ header {
 
 .logo img {
   width: 100%;
-  margin: 0em 3em;
   max-width: 4em;
+}
+
+.logo{
+  margin-left: 3em;
 }
 
 header img {
@@ -380,16 +383,18 @@ footer p{
     padding: 0;
     margin: 0;
   }
-  .logo {
-    display: flex;
-    align-items: center;
-    margin: 0;
+
+  .header .logo{
+    margin: 0 0 0 0;
   }
   .nav-bar {
     margin: 0;
     padding: 1.5rem 3rem;
     display: flex;
     justify-content: space-between;
+  }
+  .logo{
+    margin-left: 0;
   }
 
   .nav-item {
@@ -433,7 +438,8 @@ footer p{
   
   .InforSobreNos p {
     text-align: justify;
-    width: 40vw;
+    width: 100%;
+    max-width: 55vw;
   }
 
   .container-image{
